@@ -12,11 +12,11 @@ def linear_search(*kwargs):
     Dictionary:
     linear_search({"this", "is", "a", "dictionary"}, "is") -> 1
     linear_search({
-        "index1" : "this",
-        "index2" : "is",
-        "index3" : "a",
-        "index4" : "dictionary"
-    }, "a") -> 2
+        "index0" : "this",
+        "index1" : "is",
+        "index2" : "a",
+        "index3" : "dictionary"
+    }, "a") -> index2
 
     List:
     linear_search(["this", "is", "a", "list"], "a") -> 2
