@@ -37,8 +37,7 @@ def linear_search(*kwargs):
     if (len(kwargs) == 2) and isinstance(kwargs[0], dict):
         dataset = kwargs[0]
     elif (len(kwargs) == 2) and (isinstance(kwargs[0], list) or isinstance(kwargs[0], tuple)):
-        for x in kwargs[0]:
-            dataset[str(len(dataset))] = x
+        return kwargs[:len(kwargs)].index(Value)
     elif (len(kwargs) == 2):
         raise ArgumentTypeError('Invalid Data Structure!')
     else:
