@@ -1,11 +1,11 @@
 from argparse import ArgumentTypeError
 
 #Linear Search
-# 0(n)
+# O(n)
 def linear_search(*kwargs):
     """
     Linearly Search an array/dict/list for a value.
-    Returns the index/key.
+    Returns the index/key or False
 
     >> Examples <<
 

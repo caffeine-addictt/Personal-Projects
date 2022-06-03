@@ -1,5 +1,23 @@
-function Linear_Search(...)
+function linear_search(...)
     assert(#{...} > 2, 'Expected [DATA] and [VALUE].')
+    --[[
+        Linearly Search an array/table for a value.
+        Returns the index/key or false
+
+        >> Examples <<
+
+        Table:
+        linear_search({'This', 'Is', 'A', 'Table'}, 'Table') -> 4
+        linear_search({
+            Index1 = 'This',
+            Index2 = 'Is',
+            Index3 = 'A',
+            Index4 = 'Table'
+        }, 'Is') -> 'Index2'
+
+        Array:
+        linear_search('This', 'Is', 'An', 'Array', 'Is') -> 2
+    ]]
 
     local dataset = {}
     local Value = select(#...+1, ...)
