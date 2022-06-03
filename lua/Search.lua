@@ -1,4 +1,4 @@
-function linear_search(...)
+local function linear_search(...)
     assert(#{...} > 2, 'Expected [DATA] and [VALUE].')
     --[[
         Linearly Search an array/table for a value.
