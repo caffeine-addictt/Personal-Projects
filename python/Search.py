@@ -4,11 +4,12 @@ from argparse import ArgumentTypeError
 # O(n)
 def linear_search(*kwargs):
     """
+    @Description
     Linearly Search an array/dict/list for a value.
     Returns the index/key or False
 
-    >> Examples <<
-
+    @Use case
+    
     Dictionary:
     linear_search({"this", "is", "a", "dictionary"}, "is") -> 1
     linear_search({
