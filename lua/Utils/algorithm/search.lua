@@ -1,4 +1,3 @@
----@diagnostic disable: unused-local
 local Search = {}
 
 --[=[
@@ -43,3 +42,13 @@ function Search.linear_search(...)
 
     return false
 end
+
+return setmetatable({}, {
+    __index = function(_, value)
+        if Search[value] then
+            return function(...)
+                return Search[value](Search, ...)
+            end
+        end
+    end
+})

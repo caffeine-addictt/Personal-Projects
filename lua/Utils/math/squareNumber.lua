@@ -39,6 +39,11 @@
     76^2 = 7^2 * 100 + 6^2 + 20(7)(6)
          = 4936 + 20(42)
          = 5776
+
+    @parameters
+    Number <number/string> [Required]
+
+    Returns squared number.
 ]=]
 
 return function(Number)

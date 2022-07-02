@@ -1,5 +1,4 @@
 --[=[
-    File Type: Module Script / Library
     About:
         An alternative to repeat loops like:
             repeat run() until check()
