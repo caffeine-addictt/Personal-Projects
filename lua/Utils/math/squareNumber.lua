@@ -1,4 +1,3 @@
----@diagnostic disable: param-type-mismatch
 --[=[
     Interesting math behaviour for squaring numbers between 10-99 where the square can be calculated differently.
 
