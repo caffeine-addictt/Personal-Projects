@@ -35,6 +35,38 @@ end
 
 --[[
 	@about
+	Multiplication of An Arry of Numbers
+
+	@param
+	... <number(s)/array>
+
+	@return
+	Number
+
+	@usecase
+	Module:multiply(1,2,3,4,5) -> 95
+]]
+function Module:multiply(...)
+	local finalNumber = 0
+
+	for _, number in next, {...} do
+		if type(number) == 'number' then
+			finalNumber = finalNumber * number
+		else
+			errorLib(
+				'Invalid Argument, SKipping {' .. tostring(number) .. '}',
+				'',
+				'Excepted: {NUMBER}',
+				'GOT: {' .. tostring(type(number)) .. '}'
+			)
+		end
+	end
+
+	return finalNumber
+end
+
+--[[
+	@about
 	Subtract Number1 by Number2
 
 	@param
